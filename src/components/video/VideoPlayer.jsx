@@ -3,7 +3,7 @@ import React from "react";
 const VideoPlayer = ({ video }) => {
   if (video.type === "short") {
     return (
-      <video src={`http://localhost:5000/${video.fileUrl}`} allowFullScreen controls autoPlay muted loop className="w-full max-h-96 my-4" />
+      <video src={`https://boom-task-backend-2.onrender.com/api/${video.fileUrl}`} allowFullScreen controls autoPlay muted loop className="w-full max-h-96 my-4" />
     );
   }
   return (
